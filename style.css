@@ -2,6 +2,40 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "MyFont";
+  src: url("./MyFont.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+h1 {
+  position: absolute;
+  left: 15rem; /* moving this inwards */
+  top: 50%;
+
+  transform: translateY(-50%) rotate(0deg);
+  transform-origin: left center;
+
+  margin: 0;
+
+  font-family: "MyFont", sans-serif;
+  font-size: clamp(3rem, 16vmax, 12rem);
+  letter-spacing: -0.0005em;
+  line-height: 0.9;
+}
+
+.heroSection {
+  background-image: url("BgImg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  min-height: 100vh;
+  position: relative;
+  overflow: visible;
+}
+
 body {
   margin: 0;
   background: white;
