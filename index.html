@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery Archive</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section id="uploadPanel" class="upload-panel">
+        <label for="photoInput" class="upload-button"> Upload Photo </label>
+
+        <input id="photoInput" type="file" accept="image/*" capture="environment" />
+
+        <p id="status"></p>
+      </section>
+
+      <section id="grid" class="grid"></section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

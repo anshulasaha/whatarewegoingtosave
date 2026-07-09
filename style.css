@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.upload-panel {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 14px;
+  background: white;
+  border-bottom: 1px solid #eeeeee;
+  text-align: center;
+}
+
+.upload-panel.hidden {
+  display: none;
+}
+
+.upload-button {
+  display: inline-block;
+  padding: 12px 18px;
+  border: 1px solid black;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#photoInput {
+  display: none;
+}
+
+#status {
+  min-height: 20px;
+  font-size: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+  padding: 8px;
+}
+
+.grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  background: #f4f4f4;
+}
